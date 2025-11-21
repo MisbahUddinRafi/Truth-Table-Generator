@@ -1,0 +1,221 @@
+/*controls all the texts: */
+.text {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Comic Sans MS";
+}
+
+/* -------------------------------------------------- */
+/* REMOVE BACKGROUND FROM THE ENTIRE TABLEVIEW         */
+/* -------------------------------------------------- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+/* Remove background behind column headers */
+/* Transparent + glass-like white wash */
+.table-view .column-header-background {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+}
+
+ /*Remove header border line */
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/* -------------------------------------------------- */
+/* GLASS EFFECT: MAKE THE VIEWPORT & ROWS TRANSPARENT */
+/* -------------------------------------------------- */
+/*.table-view .virtual-flow .viewport {*/
+/*    -fx-background-color: transparent;*/
+/*}*/
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+
+.table-row-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15); /* soft glass hover */
+    -fx-background-radius: 5;
+
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.25); /* glassy highlight */
+    -fx-background-radius: 5;
+
+}
+
+/* -------------------------------------------------- */
+/* TRANSPARENT SCROLL BARS                            */
+/* -------------------------------------------------- */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* glass thumb */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+}
+
+/* -------------------------------------------------- */
+/*      ORIGINAL HEADER + CELL FONT STYLES            */
+/* -------------------------------------------------- */
+.table-view .column-header .label {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white; /* change if needed */
+}
+
+.table-view .table-cell {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 20px;
+    -fx-text-fill: white; /* change if needed */
+    -fx-alignment: CENTER;
+    -fx-background-color: transparent;
+}
+
+
+.general-button {
+    -fx-background-color: linear-gradient(to bottom, #094A9A, #062E5E);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.1, 0, 1);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.general-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #094A9A, #021024);
+    -fx-text-fill: white;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 6, 0.3, 0, 2);
+}
+
+.back-button {
+    -fx-background-color: linear-gradient(to bottom, #5B0CC3, #3C0984);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.1, 0, 1);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #7A2EDB, #1E0640);
+    -fx-text-fill: white;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 6, 0.3, 0, 2);
+}
+
+
+.display-text-field {
+    /* Frosted glass tint layer */
+    -fx-background-insets: 0, 1;
+    -fx-background-color: rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 12;
+    -fx-padding: 8 12;
+
+    /* Border */
+    -fx-border-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.40);
+    -fx-border-width: 1;
+
+    /* Text */
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+
+    /* Subtle shadow to lift off background */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.17), 10, 0.15, 0, 1);
+
+
+}
+
+
+/*    ALERT MESSAGE STYLING:   */
+.custom-alert {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 18px;
+}
+
+
+.dialog-pane .content {
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #2274A5;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #062E5E;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1c1c1c;
+}
+
+
+/* Make the scroll pane background fully transparent */
+.transparent-scrollpane,
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/* Ensure the ScrollPane viewport (content area) is also transparent */
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Optional: Fade scrollbars unless hovered */
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-opacity: 0.3;
+}
+
+.scroll-bar:vertical:hover,
+.scroll-bar:horizontal:hover {
+    -fx-opacity: 1.0;
+}
+
+
+
+
+
+
+
+
+
+
