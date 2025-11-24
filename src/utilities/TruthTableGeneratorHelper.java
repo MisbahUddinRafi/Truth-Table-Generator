@@ -154,6 +154,11 @@ public class TruthTableGeneratorHelper {
             return false;
         }
 
+        List<Character> variables = countVariables(expression);
+        if (variables.size() > 10) {
+            ErrorHandler.showErrorMessage("Invalid Expression", "more than 10 variables not allowed");
+            return false;
+        }
         return true;
     }
 
@@ -270,7 +275,6 @@ public class TruthTableGeneratorHelper {
         // SORT THE VARIABLES:
         List<Character> variables = new ArrayList<>(literals);
         Collections.sort(variables);
-
         return variables;
     }
 

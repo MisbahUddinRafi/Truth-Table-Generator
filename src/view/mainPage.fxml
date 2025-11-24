@@ -82,7 +82,7 @@
                               <Point3D x="1.0" />
                            </rotationAxis>
                         </ImageView>
-                        <Text fill="#d4d7d9" fontSmoothingType="LCD" layoutX="195.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creator: Md. Misbah Uddin Rafi">
+                        <Text fill="#d4d7d9" fontSmoothingType="LCD" layoutX="175.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developer: Md. Misbah Uddin Rafi">
                            <font>
                               <Font name="Comic Sans MS Bold" size="36.0" />
                            </font>
@@ -97,6 +97,35 @@
                               <Font name="Comic Sans MS Bold" size="36.0" />
                            </font>
                         </Text>
+                        <Group layoutX="140.0" layoutY="302.0">
+                           <children>
+                              <Text fill="#d4d7d9" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Simple User Tips:">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d4d7d9" fontSmoothingType="LCD" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Maximum 10 variables are allowed.">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d4d7d9" fontSmoothingType="LCD" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Case sensitive (B and b are different)">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d4d7d9" fontSmoothingType="LCD" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Flexible AND operation (AB = A.B)">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d4d7d9" fontSmoothingType="LCD" layoutX="20.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; No need to type AND (.) operator!">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
                      </children>
                   </Group>
                </children>
